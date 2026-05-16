@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- ═══ TeckelCoin Logo — Coin Style (Ioji) ═══ -->
+  <defs>
+    <!-- Gradient pentru cerc-monedă -->
+    <radialGradient id="coinGrad" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFE680"/>
+      <stop offset="35%" stop-color="#FFD700"/>
+      <stop offset="75%" stop-color="#E89B00"/>
+      <stop offset="100%" stop-color="#8B5A00"/>
+    </radialGradient>
+    <radialGradient id="coinInner" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFEC8B"/>
+      <stop offset="100%" stop-color="#F0B400"/>
+    </radialGradient>
+    <!-- Gradient pentru blana neagră lucioasă -->
+    <linearGradient id="blackFur" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a2a20"/>
+      <stop offset="50%" stop-color="#1a0f0a"/>
+      <stop offset="100%" stop-color="#0a0604"/>
+    </linearGradient>
+    <linearGradient id="brownAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a0633a"/>
+      <stop offset="100%" stop-color="#6b3a1c"/>
+    </linearGradient>
+    <filter id="dropShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.35"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Cerc exterior monedă (rim) -->
+  <circle cx="512" cy="512" r="490" fill="url(#coinGrad)" filter="url(#dropShadow)"/>
+  <!-- Cerc interior (relief) -->
+  <circle cx="512" cy="512" r="430" fill="url(#coinInner)"/>
+  <!-- Inel decorativ -->
+  <circle cx="512" cy="512" r="448" fill="none" stroke="#8B5A00" stroke-width="3" opacity="0.6"/>
+  <circle cx="512" cy="512" r="425" fill="none" stroke="#8B5A00" stroke-width="2" opacity="0.4"/>
+
+  <!-- Text curbat "TECKELCOIN" sus -->
+  <path id="topCurve" d="M 152 512 A 360 360 0 0 1 872 512" fill="none"/>
+  <text font-family="Georgia, serif" font-size="70" font-weight="900" fill="#5a3800" letter-spacing="14">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">TECKELCOIN</textPath>
+  </text>
+
+  <!-- Text curbat "TCKL" jos -->
+  <path id="bottomCurve" d="M 152 530 A 360 360 0 0 0 872 530" fill="none"/>
+  <text font-family="Georgia, serif" font-size="80" font-weight="900" fill="#5a3800" letter-spacing="20">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">★ TCKL ★</textPath>
+  </text>
+
+  <!-- ═══ Ioji - Teckel stilizat ═══ -->
+  <g transform="translate(512, 470)">
+    <!-- Corp (alungit, în profil) -->
+    <ellipse cx="0" cy="40" rx="200" ry="65" fill="url(#blackFur)"/>
+
+    <!-- Picioare scurte (4) -->
+    <rect x="-150" y="80" width="30" height="55" rx="12" fill="#1a0f0a"/>
+    <rect x="-90" y="80" width="30" height="55" rx="12" fill="#1a0f0a"/>
+    <rect x="60" y="80" width="30" height="55" rx="12" fill="#1a0f0a"/>
+    <rect x="120" y="80" width="30" height="55" rx="12" fill="#1a0f0a"/>
+
+    <!-- Lăbuțe maro (Ioji are lăbuțe maro/tan) -->
+    <ellipse cx="-135" cy="138" rx="18" ry="8" fill="url(#brownAccent)"/>
+    <ellipse cx="-75" cy="138" rx="18" ry="8" fill="url(#brownAccent)"/>
+    <ellipse cx="75" cy="138" rx="18" ry="8" fill="url(#brownAccent)"/>
+    <ellipse cx="135" cy="138" rx="18" ry="8" fill="url(#brownAccent)"/>
+
+    <!-- Coadă (orientată în sus, pe spate) -->
+    <path d="M 195 30 Q 240 -20 255 -50 Q 250 -30 230 -10 Q 220 10 210 35"
+          fill="none" stroke="#1a0f0a" stroke-width="22" stroke-linecap="round"/>
+
+    <!-- Cap (mai mare, lateral stânga, cu privire frontală) -->
+    <ellipse cx="-200" cy="-10" rx="85" ry="70" fill="url(#blackFur)"/>
+
+    <!-- Bot alungit (specific teckel) -->
+    <ellipse cx="-270" cy="15" rx="50" ry="28" fill="url(#blackFur)"/>
+    <!-- Bot maro pe vârf (ca Ioji) -->
+    <ellipse cx="-280" cy="20" rx="35" ry="20" fill="url(#brownAccent)" opacity="0.9"/>
+
+    <!-- Nas -->
+    <ellipse cx="-308" cy="10" rx="14" ry="11" fill="#000"/>
+    <ellipse cx="-310" cy="6" rx="5" ry="3" fill="#444"/>
+
+    <!-- Ochi mari, expresivi (ca în poză) -->
+    <ellipse cx="-220" cy="-25" rx="14" ry="16" fill="#3a2510"/>
+    <circle cx="-220" cy="-25" r="10" fill="#5a3818"/>
+    <circle cx="-217" cy="-29" r="4" fill="#fff"/>
+    <ellipse cx="-180" cy="-25" rx="14" ry="16" fill="#3a2510"/>
+    <circle cx="-180" cy="-25" r="10" fill="#5a3818"/>
+    <circle cx="-177" cy="-29" r="4" fill="#fff"/>
+
+    <!-- Sprâncene tan (Ioji are pete tan deasupra ochilor) -->
+    <ellipse cx="-220" cy="-50" rx="14" ry="6" fill="url(#brownAccent)" opacity="0.85"/>
+    <ellipse cx="-180" cy="-50" rx="14" ry="6" fill="url(#brownAccent)" opacity="0.85"/>
+
+    <!-- Urechi mari căzute (semnătura teckelului) -->
+    <path d="M -240 -50 Q -280 -10 -275 60 Q -260 65 -240 30 Z" fill="url(#blackFur)"/>
+    <path d="M -160 -50 Q -130 0 -130 50 Q -150 55 -170 25 Z" fill="url(#blackFur)"/>
+
+    <!-- Detaliu piept tan (marcaj distinctiv) -->
+    <ellipse cx="-160" cy="40" rx="22" ry="35" fill="url(#brownAccent)" opacity="0.7"/>
+
+    <!-- Highlight pe blană (lustru) -->
+    <ellipse cx="-30" cy="0" rx="100" ry="20" fill="#fff" opacity="0.08"/>
+    <ellipse cx="-220" cy="-50" rx="40" ry="15" fill="#fff" opacity="0.10"/>
+  </g>
+
+  <!-- Mică emblemă "BSC" jos pentru context blockchain -->
+  <g transform="translate(512, 710)">
+    <rect x="-45" y="-15" width="90" height="30" rx="6" fill="#5a3800" opacity="0.8"/>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFD700" text-anchor="middle">BSC</text>
+  </g>
+</svg>

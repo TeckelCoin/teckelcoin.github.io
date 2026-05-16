@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+  <defs>
+    <linearGradient id="fur" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a0e"/>
+      <stop offset="60%" stop-color="#1a0d06"/>
+      <stop offset="100%" stop-color="#0e0804"/>
+    </linearGradient>
+    <linearGradient id="tan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c87941"/>
+      <stop offset="100%" stop-color="#8b4f1e"/>
+    </linearGradient>
+    <linearGradient id="tanLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e08848"/>
+      <stop offset="100%" stop-color="#a05a28"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- ── Coadă ridicată ── -->
+    <path d="M 278 52 Q 298 38 302 22 Q 304 14 298 12 Q 292 10 289 18 Q 284 32 272 46"
+          fill="url(#fur)" stroke="none"/>
+
+    <!-- ── Corp lung (siluetă dachs) ── -->
+    <ellipse cx="158" cy="68" rx="118" ry="28" fill="url(#fur)"/>
+
+    <!-- ── Gât ── -->
+    <path d="M 245 56 Q 262 42 268 50 Q 272 58 258 66 Q 248 70 240 68 Z" fill="url(#fur)"/>
+
+    <!-- ── Cap rotund ── -->
+    <ellipse cx="272" cy="46" rx="26" ry="22" fill="url(#fur)"/>
+
+    <!-- ── Bot alungit (trăsătura definitorie a teckelului) ── -->
+    <path d="M 282 50 Q 310 52 314 56 Q 316 62 308 65 Q 296 67 280 62 Z" fill="url(#fur)"/>
+
+    <!-- ── Tan pe bot ── -->
+    <ellipse cx="306" cy="58" rx="9" ry="6" fill="url(#tanLight)" opacity="0.9"/>
+
+    <!-- ── Nas ── -->
+    <ellipse cx="314" cy="55" rx="5" ry="4" fill="#0a0604"/>
+    <ellipse cx="313" cy="53" rx="2" ry="1.5" fill="#3a2a20" opacity="0.6"/>
+
+    <!-- ── Ochi expresiv ── -->
+    <circle cx="280" cy="40" r="6" fill="#0a0604"/>
+    <circle cx="280" cy="40" r="4" fill="#5a2e10"/>
+    <circle cx="278" cy="38" r="1.8" fill="white" opacity="0.95"/>
+
+    <!-- ── Sprânceană tan (semnătura Ioji) ── -->
+    <ellipse cx="280" cy="33" rx="6" ry="3" fill="url(#tan)" opacity="0.9"/>
+
+    <!-- ── Ureche lungă căzută ── -->
+    <path d="M 258 36 Q 250 34 244 48 Q 240 62 248 70 Q 258 66 262 54 Q 266 42 262 34 Z"
+          fill="url(#fur)"/>
+    <!-- Interior ureche (ton mai cald) -->
+    <path d="M 256 39 Q 250 38 246 50 Q 244 60 250 66 Q 257 63 260 52 Q 263 43 259 38 Z"
+          fill="#2a1208" opacity="0.6"/>
+
+    <!-- ── Tan pe piept / gât ── -->
+    <ellipse cx="248" cy="62" rx="14" ry="10" fill="url(#tan)" opacity="0.75"/>
+
+    <!-- ── Tan pe burtă (caracteristic) ── -->
+    <ellipse cx="158" cy="88" rx="70" ry="7" fill="url(#tan)" opacity="0.45"/>
+
+    <!-- ── Picioare față (scurte!) ── -->
+    <rect x="218" y="88" width="14" height="22" rx="7" fill="url(#fur)"/>
+    <rect x="238" y="88" width="14" height="22" rx="7" fill="url(#fur)"/>
+    <!-- Lăbuțe tan față -->
+    <ellipse cx="225" cy="111" rx="9" ry="5" fill="url(#tan)" opacity="0.85"/>
+    <ellipse cx="245" cy="111" rx="9" ry="5" fill="url(#tan)" opacity="0.85"/>
+
+    <!-- ── Picioare spate ── -->
+    <rect x="72" y="88" width="14" height="22" rx="7" fill="url(#fur)"/>
+    <rect x="92" y="88" width="14" height="22" rx="7" fill="url(#fur)"/>
+    <!-- Lăbuțe tan spate -->
+    <ellipse cx="79" cy="111" rx="9" ry="5" fill="url(#tan)" opacity="0.85"/>
+    <ellipse cx="99" cy="111" rx="9" ry="5" fill="url(#tan)" opacity="0.85"/>
+
+    <!-- ── Highlight pe spate (lustru blană) ── -->
+    <ellipse cx="160" cy="52" rx="90" ry="8" fill="white" opacity="0.055"/>
+  </g>
+</svg>
