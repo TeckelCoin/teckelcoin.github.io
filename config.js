@@ -40,9 +40,10 @@ const TECKEL_CONFIG = {
 
   // ─── Social links ─────────────────────────────────────────
   SOCIAL: {
-    telegram:  "https://t.me/TeckelCoin",        // ← actualizează
-    twitter:   "https://twitter.com/TeckelCoin", // ← actualizează
-    github:    "https://github.com/TeckelCoin",  // ← actualizează
+    twitter:   "https://x.com/TeckelCoin2026",
+    tiktok:    "https://tiktok.com/@teckelcoin_2026",
+    facebook:  "https://www.facebook.com/profile.php?id=TeckelcoinDaschundofCrypto",
+    github:    "https://github.com/TeckelCoin",
     bscscan:   "https://bscscan.com/token/",     // + CONTRACT_ADDRESS
   },
 
