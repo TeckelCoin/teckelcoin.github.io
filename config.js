@@ -9,16 +9,16 @@ const TECKEL_CONFIG = {
   // ─── Contract ─────────────────────────────────────────────
   // TESTNET: 0xCA6b1bD482Fc0FeA79cdD84b27cC2dc57daCc054
   // MAINNET: actualizează după deploy mainnet
-  CONTRACT_ADDRESS: "0xCA6b1bD482Fc0FeA79cdD84b27cC2dc57daCc054",
-  IS_TESTNET: true, // setează false după deploy mainnet
+  CONTRACT_ADDRESS: "0xb4d478298f2215f912Ca59DC634752A562DF81E3",
+  IS_TESTNET: false,
 
   // ─── Network BSC Testnet (schimbă la mainnet înainte de launch) ──
   NETWORK: {
-    chainId:     "0x61",           // 97 = BSC Testnet
-    chainName:   "BNB Smart Chain Testnet",
-    nativeCurrency: { name: "BNB", symbol: "tBNB", decimals: 18 },
-    rpcUrls:     ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
-    blockExplorerUrls: ["https://testnet.bscscan.com/"],
+    chainId:     "0x38",           // 56 = BSC Mainnet
+    chainName:   "BNB Smart Chain",
+    nativeCurrency: { name: "BNB", symbol: "BNB", decimals: 18 },
+    rpcUrls:     ["https://bsc-dataseed1.binance.org/"],
+    blockExplorerUrls: ["https://bscscan.com/"],
   },
 
   // ─── Token info ───────────────────────────────────────────
